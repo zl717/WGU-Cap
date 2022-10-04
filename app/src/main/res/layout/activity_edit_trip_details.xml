@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTripDetails">
+
+    <EditText
+        android:id="@+id/editTrip_TitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTrip_DurationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/editTrip_TitleTV"
+        app:layout_constraintStart_toStartOf="@+id/editTrip_TitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/editTrip_TitleTV" />
+
+    <EditText
+        android:id="@+id/editTrip_CostTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/editTrip_DurationTV"
+        app:layout_constraintStart_toStartOf="@+id/editTrip_DurationTV"
+        app:layout_constraintTop_toBottomOf="@+id/editTrip_DurationTV" />
+
+    <Button
+        android:id="@+id/editTrip_SaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/editTrip_CostTV"
+        app:layout_constraintStart_toStartOf="@+id/editTrip_CostTV"
+        app:layout_constraintTop_toBottomOf="@+id/editTrip_CostTV" />
+
+    <Button
+        android:id="@+id/editTrip_CancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/editTrip_SaveBtn"
+        app:layout_constraintStart_toStartOf="@+id/editTrip_SaveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/editTrip_SaveBtn" />
+
+    <Button
+        android:id="@+id/editTrip_DeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/editTrip_CancelBtn"
+        app:layout_constraintStart_toStartOf="@+id/editTrip_CancelBtn"
+        app:layout_constraintTop_toBottomOf="@+id/editTrip_CancelBtn" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:gravity="center"
+        android:text="Title"
+        app:layout_constraintBottom_toBottomOf="@+id/editTrip_TitleTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTrip_TitleTV"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:gravity="center"
+        android:text="Duration"
+        app:layout_constraintBottom_toBottomOf="@+id/editTrip_DurationTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTrip_DurationTV" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:gravity="center"
+        android:text="Cost"
+        app:layout_constraintBottom_toBottomOf="@+id/editTrip_CostTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTrip_CostTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

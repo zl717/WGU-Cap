@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUserScreen">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="Create new password"
+        app:layout_constraintBottom_toTopOf="@+id/newUser_Password"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_Password"
+        app:layout_constraintStart_toStartOf="@+id/newUser_Password" />
+
+    <EditText
+        android:id="@+id/newUser_Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+
+        android:layout_marginBottom="356dp"
+
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/newUser_Username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+
+
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUser_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="Create new username"
+        app:layout_constraintBottom_toTopOf="@+id/newUser_Username"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_Username"
+        app:layout_constraintStart_toStartOf="@+id/newUser_Username" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="New User"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/newUser_SaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="@+id/newUser_EmployeeType"
+        app:layout_constraintTop_toBottomOf="@+id/newUser_EmployeeType" />
+
+    <Button
+        android:id="@+id/newUser_CancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_EmployeeType"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/newUser_SaveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/newUser_EmployeeType" />
+
+    <EditText
+        android:id="@+id/newUser_EmployeeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newUser_Password"
+        app:layout_constraintTop_toBottomOf="@+id/newUser_Password" />
+
+    <EditText
+        android:id="@+id/newUser_EmployeeType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_EmployeeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newUser_EmployeeName"
+        app:layout_constraintTop_toBottomOf="@+id/newUser_EmployeeName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="Employee name"
+        app:layout_constraintBottom_toTopOf="@+id/newUser_EmployeeName"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_EmployeeName"
+        app:layout_constraintStart_toStartOf="@+id/newUser_EmployeeName" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="Employee Type"
+        app:layout_constraintBottom_toTopOf="@+id/newUser_EmployeeType"
+        app:layout_constraintEnd_toEndOf="@+id/newUser_EmployeeType"
+        app:layout_constraintStart_toStartOf="@+id/newUser_EmployeeType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
